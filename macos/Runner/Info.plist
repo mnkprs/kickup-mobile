@@ -28,5 +28,19 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<!-- Deep Links for OAuth callback (if running on macOS) -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.kickup.auth</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>kickup</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>

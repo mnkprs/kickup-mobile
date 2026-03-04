@@ -66,15 +66,26 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<!-- Deep Links -->
+	<!-- Deep Links - each scheme needs its own URL type for proper registration -->
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.kickup.auth</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>kickup</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.kickup.auth.mobile</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
 				<string>kickupmobile</string>
 			</array>
 		</dict>
