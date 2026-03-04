@@ -10,8 +10,13 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:kickup_flutter/app.dart';
 
 void main() {
-  testWidgets('App has title and home content', (WidgetTester tester) async {
-    await tester.pumpWidget(const KickupApp());
+  testWidgets('HomeScreen has title and content', (WidgetTester tester) async {
+    await tester.pumpWidget(
+      const MaterialApp(
+        title: 'Kickup',
+        home: HomeScreen(),
+      ),
+    );
 
     expect(find.text('Kickup'), findsOneWidget);
     expect(find.text('Welcome to Kickup'), findsOneWidget);
